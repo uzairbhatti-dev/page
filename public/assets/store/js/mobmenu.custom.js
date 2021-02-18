@@ -1,0 +1,1 @@
+$(document).ready(function(){$(function(){$('nav#menu').mmenu({slidingSubmenus:false,position:'right',zposition:'front'});$(".mm-list > li a.close").click(function(){$(".mm-menu").close();});});});

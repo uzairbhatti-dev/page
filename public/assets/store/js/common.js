@@ -1,0 +1,1 @@
+$(document).ready(function(){$.ajaxSetup({headers:{'X-CSRF-TOKEN':$('meta[name="csrf-token"]').attr('content')}});$(document).on('click','.currency_switcher',function(){$.ajax({url:currency_switch,dataType:'json',type:'post',data:{currency:$(this).data('currency')},success:function(response){location.reload();}});});});
